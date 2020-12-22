@@ -15,7 +15,7 @@
 
     //connector like jbdc and the likes
 
-    $dsn = "mysql:hostname=$hostname; dbname=$db; charset=$charset";
+    $dsn="mysql:hostname=$hostname;dbname=$db;charset=$charset";
 
     
     try {
