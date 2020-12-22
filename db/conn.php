@@ -15,9 +15,8 @@
 
     //connector like jbdc and the likes
 
-    $dsn="mysql:hostname=$hostname;dbname=$db;charset=$charset";
+    $dsn="mysql:host=$hostname;dbname=$db;charset=$charset";
 
-    
     try {
         $pdo = new PDO($dsn, $user, $pass);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
