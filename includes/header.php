@@ -1,3 +1,10 @@
+<?php
+  //This includes the session file. This file contains code that starts/resumes a new session
+  //By having it in the header file, it will be included on every page, allowing session capability to be used on 3every page across the website
+  include_once 'includes/session.php';
+?>
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -35,22 +42,54 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.php">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="viewrecords.php">View Choir Members</a>
             </li>
+            
+            <!--
             <li class="nav-item">
               <a class="nav-link" href="#">Pricing</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li>
+            -->
           </ul>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="login.php">Log in</a>
+            </li>
+          </ul>
+
         </div>
       </div>
     </nav>
 
     <br/>
+
+
+<!--
+    <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="viewrecords.php">View Choir Members</a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          
+          </ul>
+
+-->
