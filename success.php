@@ -3,6 +3,7 @@
     $title = 'Success';
     require_once 'includes/header.php';
     require_once 'db/conn.php';
+    require_once 'sendemail.php';
 
     if(isset($_POST['submit'])){
         //extract value from the $_POST array
@@ -14,8 +15,12 @@
 
         //call function to insert and track if success or not
         $isSuccess = $crud->insertChoirMember($firstname, $lastname, $emailaddress, $address, $gender); 
+        $genderName = $crud->getGenderById($gender);
+
 
         if($isSuccess){
+            SendEmail::SendMail($emailaddress, 'Welcome to City of Refuge Choir', 
+            'You have successfully registered to become a part of City of Refuge\'s choir.');
             //echo '<h1 class="text-center text-success"> You have been successfully registered</h1>';
             include 'includes/successmessage.php';
         }else{
@@ -35,7 +40,7 @@
             </h6>
 
             <h6 class="card-subtitle mb-2 text-muted">
-            Gender: <?php echo $_POST['gender']; ?>
+            Gender: <?php echo $genderName['gender_name']; ?>
             </h6>
 
             <h6 class="card-subtitle mb-2 text-muted">

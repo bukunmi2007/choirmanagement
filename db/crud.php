@@ -115,6 +115,25 @@
                 return false;
             }
         }
+
+
+        public function getGenderById($id){
+            try {
+                //code...
+                
+                $sql = "SELECT * FROM gender WHERE gender_id = :id";
+                $stmt = $this->db->prepare($sql);
+                $stmt -> bindparam (':id', $id);
+                $stmt->execute();
+                $result = $stmt -> fetch();
+                return $result;
+
+            } catch (PDOException $e) {
+                echo $e->getMessage();
+                return false;
+            }
+        }
+
     }
 
     //putting in try catches
