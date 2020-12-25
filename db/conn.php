@@ -1,17 +1,17 @@
 <?php
     // Development Connection
-    $hostname = '127.0.0.1';
-    $db = 'choirmanagement_db';
-    $user = 'root';
-    $pass = '';
-    $charset = 'utf8mb4';
+    // $hostname = '127.0.0.1';
+    // $db = 'choirmanagement_db';
+    // $user = 'root';
+    // $pass = '';
+    // $charset = 'utf8mb4';
 
     // Remote Database Connection
-    // $hostname = 'remotemysql.com'; 
-    // $db = '3DRVz64Fib';
-    // $user = '3DRVz64Fib';
-    // $pass = 'Zqt4oUfcAJ';
-    // $charset = 'utf8mb4';
+    $hostname = 'remotemysql.com'; 
+    $db = 'vYPqJl3Oo1';
+    $user = 'vYPqJl3Oo1';
+    $pass = 'Nl9YI9sQT1';
+    $charset = 'utf8mb4';
 
     //connector like jbdc and the likes
 

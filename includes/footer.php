@@ -1,8 +1,11 @@
     <br>
     <br>
-
-        <div id="footer" class="p-3 bg-primary text-white fixed-bottom">
-            <p class="text-centre"> Copyright &copy; - Choir Management System <?php echo date('Y'); ?> </p>
+    <br>
+    <br> 
+    <br>
+    <br>
+        <div id="footer" class=" bg-secondary text-white text-center fixed-bottom">
+            <p class="text-centre"> Copyright &copy; - City of Refuge - Choir Management System <?php echo date('Y'); ?> </p>
         </div>
 
         <!-- <div id="footer">

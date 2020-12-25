@@ -19,7 +19,7 @@
         $destination = "$target_dir$emailaddress.$ext";
         move_uploaded_file($orig_file, $destination);
 
-        exit();
+       //exit();
         
         //call function to insert and track if success or not
         $isSuccess = $crud->insertChoirMember($firstname, $lastname, $emailaddress, $address, $gender, $destination); 
