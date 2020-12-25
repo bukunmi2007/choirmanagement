@@ -1,8 +1,13 @@
     <br>
     <br>
-        <div id="footer">
-            <?php echo "Copyright " . date("y"); ?>
+
+        <div id="footer" class="p-3 bg-primary text-white fixed-bottom">
+            <p class="text-centre"> Copyright &copy; - Choir Management System <?php echo date('Y'); ?> </p>
         </div>
+
+        <!-- <div id="footer">
+            <?php //echo "Copyright " . date("y"); ?>
+        </div> -->
 
     </div>
 <!-- Optional JavaScript; choose one of the two! -->

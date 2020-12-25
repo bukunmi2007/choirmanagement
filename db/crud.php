@@ -9,9 +9,10 @@
         }
 
         //function to insert a new choir member into the choirmanagement database
-        public function insertChoirMember($firstname, $lastname, $emailaddress, $address, $gender){
+        public function insertChoirMember($firstname, $lastname, $emailaddress, $address, $gender, $avatar_path){
             try {
-                $sql = "INSERT INTO choir_member (firstname, lastname, emailaddress, address, gender_id) VALUES (:firstname, :lastname, :emailaddress, :address, :gender)";
+                $sql = "INSERT INTO choir_member (firstname, lastname, emailaddress, address, gender_id, avatar_path) 
+                VALUES (:firstname, :lastname, :emailaddress, :address, :gender, :avatar_path)";
                 $stmt = $this->db->prepare($sql);
 
                 // bind all placeholders to the actual values
@@ -20,6 +21,7 @@
                 $stmt->bindparam(':emailaddress', $emailaddress);
                 $stmt->bindparam(':address', $address);
                 $stmt->bindparam(':gender', $gender);
+                $stmt->bindparam(':avatar_path', $avatar_path);
 
                 //execute statement
                 $stmt->execute();

@@ -49,7 +49,15 @@
             <label for="address">Address</label>
             <input required type="text" class="form-control" id="address" name="address">
         </div>
+
+        <br/>
        
+        <div class="custom-file">
+            <input required type="file" accept="image/*" class= "custom-file-input" id="avatar" name="avatar">
+            <label class="custom-file-label" for="avatar"> Choose File </label>
+            <small id="avatar" class="form-text text-danger"> File upload is optional</small>
+        </div>
+
         <button type="submit" name="submit" class="btn btn-primary btn-block">Submit</button> 
     </form>
 

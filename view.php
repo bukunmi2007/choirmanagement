@@ -11,8 +11,9 @@
     }else{
         $id = $_GET['id'];
         $results = $crud->getChoirMemberDetails($id);
-    
 ?>
+
+<img src="<?php echo empty($results['avatar_path']) ? "uploads/blank.png" : $results['avatar_path']) ; ?>" class="rounded-circle" style="width: 30%; height:30%" />
 
 <div class="card" style="width: 18rem;">
         <div class="card-body">

@@ -13,8 +13,16 @@
         $address = $_POST['address'];
         $gender = $_POST['gender'];
 
+        $orig_file = $_FILES['avatar']["tmp_name"];
+        $ext = pathinfo($_FILES['avatar']["name"], PATHINFO_EXTENSION);
+        $target_dir = 'uploads/';
+        $destination = "$target_dir$emailaddress.$ext";
+        move_uploaded_file($orig_file, $destination);
+
+        exit();
+        
         //call function to insert and track if success or not
-        $isSuccess = $crud->insertChoirMember($firstname, $lastname, $emailaddress, $address, $gender); 
+        $isSuccess = $crud->insertChoirMember($firstname, $lastname, $emailaddress, $address, $gender, $destination); 
         $genderName = $crud->getGenderById($gender);
 
 
@@ -32,6 +40,8 @@
 ?>
 
     <!-- This print out values that were passed to the action page using method = 'post' -->
+    <img src="<?php echo $destination; ?>" class="rounded-circle" style="width: 30%; height:30%" />
+
     <div class="card" style="width: 18rem;">
         <div class="card-body">
             <h5 class="card-title"><?php echo $_POST['firstname'] . ' ' . $_POST['lastname'];?></h5>
