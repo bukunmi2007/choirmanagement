@@ -49,6 +49,14 @@
                 <a class="nav-link" href="viewrecords.php">View Choir Members</a>
               </li>
               
+              <li class="nav-item">
+                <a class="nav-link" href="webservers.php">Types of Web Servers</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="ftpclientsoftware.php">FTP Client Softwares</a>
+              </li>
+
               <!--
               <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>

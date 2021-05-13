@@ -8,6 +8,8 @@
 ?>
 
     <h1 class="text-center">Registration as Choir member</h1>
+    <h3 class="text-center"> We have also included information about Three (3) types of webservers 
+    as well as Three (3) types of FTP client softwares </h3>
 
     <!--
         Name
