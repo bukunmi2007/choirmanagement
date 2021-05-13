@@ -8,10 +8,17 @@
 
     // Remote Database Connection
      $hostname = 'remotemysql.com'; 
-     $db = 'vYPqJl3Oo1';
-     $user = 'vYPqJl3Oo1';
-     $pass = 'Nl9YI9sQT1';
+     $db = 'bXNzTa6HBJ';
+     $user = 'bXNzTa6HBJ';
+     $pass = 'Li2L3FUhxK';
      $charset = 'utf8mb4';
+
+    // Remote Database Connection
+    // $hostname = 'remotemysql.com'; 
+    // $db = 'vYPqJl3Oo1';
+    // $user = 'vYPqJl3Oo1';
+    // $pass = 'Nl9YI9sQT1';
+    // $charset = 'utf8mb4';
 
     //connector like jbdc and the likes
 
